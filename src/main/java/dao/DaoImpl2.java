@@ -1,13 +1,12 @@
 package dao;
-
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Component("dao")
-//@Profile("prod")
-public class DaoImpl implements IDao {
+@Component("dao2")
+//@Profile("dev")
+public class DaoImpl2 implements IDao {
     @Override
     public double getValue() {
-        return 100.0;
+        return 150.0;
     }
 }
